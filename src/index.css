@@ -1,0 +1,123 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+:root
+{
+    --main-color:#0aad0a;
+    --light-color:#f0f3f2;
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --font-family:'Encode Sans Expanded', sans-serif;
+    --rating-color:#ffc908;
+}
+
+body{
+    font-family: var(--font-family) !important;
+}
+
+.rating-color
+{
+    color: var(--rating-color);
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+a , a:hover{
+    color: black !important;
+    text-decoration: none !important;
+}
+.product:hover
+{
+    box-shadow: var(--shadow);
+    border: solid 1px var(--main-color);
+}
+.product .btn 
+{
+    transition: transform 1s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+.font-sm
+{
+    font-size: 14px;
+}
+.text-main
+{
+    color: var(--main-color);
+}
+.bg-main
+{
+    background-color: var(--main-color) !important;
+}
+.bg-main-light 
+{
+    background-color: var(--light-color) !important;
+}
+
+.brand{
+    transition: 1s;
+}
+.brand:hover{
+
+    box-shadow: 2px 2px 20px 0px #0aad0a;
+    cursor: pointer;
+}
+
+.test {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .test img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .categoryItems{
+    transition: 1s;
+    cursor: pointer;
+  }
+  .categoryItems:hover{
+    box-shadow: 2px 2px 20px 0px #0aad0a;
+  }
+  .isloadingBacground{
+    background-color: rgba(128, 128, 128, 0.5);
+    z-index: 999999999;
+
+}
+.cartIcon{
+    
+    font-size: 20px;
+    margin-right: 3px;
+    color: gray;
+}
+.numberOfCart{
+    background-color: #0aad0a;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: -6px;
+    right: -7px;
+
+    
+}
+.number{
+    font-size: 12px;
+}
+
+
+
+  
+  li a.active {
+    color: #0aad0a !important;
+  }
+
+  
